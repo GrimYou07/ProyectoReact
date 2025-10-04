@@ -1,5 +1,5 @@
 ///////////////////////////////////////////////////////////////////////
-Para subir lo que se va hacer 
+Instrucciones para subir lo que se va hacer 
 
 git pull se usa para descargar los cambios que se realizaron antes de ti 
 git add . se usa para añadir todos los cambios en el directorio de trabajo
