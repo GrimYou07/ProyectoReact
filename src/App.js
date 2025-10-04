@@ -1,11 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+// logo.png is located in public/img/, reference it via absolute path so bundlers pick it from public
+import './css/App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+  <img src="/img/logo.png" className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

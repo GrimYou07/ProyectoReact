@@ -1,0 +1,32 @@
+/* CSS para la página estática en public/index.html */
+
+/* Ajusta el tamaño del logo principal (id="logo") */
+#logo {
+  height: 120px; /* altura fija, ajústalo a lo que prefieras */
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+/* Opcional: reducir tamaño en pantallas pequeñas */
+@media (max-width: 480px) {
+  #logo {
+    height: 80px;
+  }
+}
+
+/* Imagen del campus dentro del contenido principal */
+#imagenCampus {
+  display: block;
+  margin: 20px auto;
+  width: 35%;
+  max-width: 900px; /* ajusta este valor si quieres un máximo distinto */
+  height: auto;
+  border-radius: 8%;
+}
+
+@media (max-width: 768px) {
+  #imagenCampus {
+    max-width: 600px;
+  }
+}
