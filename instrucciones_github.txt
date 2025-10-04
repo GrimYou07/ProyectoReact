@@ -1,0 +1,9 @@
+///////////////////////////////////////////////////////////////////////
+Para subir lo que se va hacer 
+
+git pull se usa para descargar los cambios que se realizaron antes de ti 
+git add . se usa para añadir todos los cambios en el directorio de trabajo
+git commit -m "descripción corta de lo que se cambio"
+git push  se usa para subir tus cambios 
+
+//////////////////////////////////////////////////////////////////////
