@@ -1,0 +1,138 @@
+.admin-layout {
+  --color1: #12518c; /* from instrucciones_github.txt */
+  --color2: #00659b;
+  --color3: #0087b0;
+  --color4: #00bbc3;
+  --color5: #00ffc9;
+  --color6: #bd0e0e;
+  --bg: #ffffff;
+  --text: #222222;
+
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Topbar */
+.topbar {
+  height: 64px;
+  background: var(--color4);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+}
+
+.topbar .campus-logo {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.topbar .app-title {
+  font-weight: 700;
+}
+
+.topbar-right .admin-name {
+  background: rgba(1, 51, 104, 0.297);
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+/* Main layout: sidebar + content */
+.main-area {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.sidebar {
+  width: 220px;
+  background: linear-gradient(180deg, #f7fbfe 0%, #eef6fb 100%);
+  padding: 18px 12px;
+  border-right: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px 12px;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  color: #1f2933;
+}
+
+.sidebar li:hover { background: rgba(0, 189, 195, 0.411); }
+
+.sidebar li.active {
+  background: var(--color4);
+  color: #fff;
+  box-shadow: 0 2px 6px rgb(12, 72, 118);
+}
+
+.sidebar li.logout {
+  margin-top: 8px;
+  color: var(--color6);
+}
+
+/* Content area */
+.admin-container {
+  flex: 1 1 auto;
+  max-width: none;
+  margin: 20px;
+  padding: 20px;
+  background: var(--bg);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(4, 65, 78, 0.633);
+}
+
+.admin-container h1 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.table-wrap { overflow-x: auto; }
+
+.admin-table { width: 100%; border-collapse: collapse; }
+
+.admin-table th,
+.admin-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.admin-table thead th { background: #f7f9fb; font-weight: 600; }
+
+.prof-name { width: 220px; font-weight: 600; }
+.prof-subjects { width: 300px; color: #333; }
+.prof-schedule .schedule-row { margin-bottom: 6px; }
+
+.notes { margin-top: 18px; color: #555; font-size: 0.95rem; }
+
+/* accents */
+.admin-table tbody tr:hover { background: rgba(0, 139, 176, 0.04); }
+.admin-table th { color: var(--color1); }
+
+@media (max-width: 900px) {
+  .sidebar { display: none; }
+  .admin-container { margin: 12px; padding: 12px; }
+}
+
+@media (max-width: 420px) {
+  .topbar { padding: 0 8px; }
+  .topbar .app-title { display: none; }
+}

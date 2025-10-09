@@ -7,3 +7,9 @@ git commit -m "descripción corta de lo que se cambio"
 git push  se usa para subir tus cambios 
 
 //////////////////////////////////////////////////////////////////////
+
+.color1 {color: #12518c;}
+.color2 {color: #00659b;}
+.color3 {color: #0087b0;}
+.color4 {color: #00bbc3;}
+.color5 {color: #00ffc9;}
